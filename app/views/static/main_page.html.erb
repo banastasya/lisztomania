@@ -7,12 +7,14 @@
   </head>
   <body>
 <mypage>
+  <div id="header">
     <h1>Music List</h1>
     <h2>Welcome!</h2>
-<div class="block">
+  </div>
+<div id="main-block">
     <h3>Let's Find!</h3>
     <ol>
-      <li>Artist</li>
+      <li><%= link_to('Artist Search', controller: 'artist', action: 'search')%></li>
       <li>Album</li>
       <li>Song</li>
     </ol>

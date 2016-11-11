@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*:after,*:before{
+  box-sizing: inherit;
+}
+
+
+#header {
+  height: 15em;
+}
+
+#search-body {
+  background-color: white;
+}
+#header p {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  font-size: 1.5em;
+  padding: 0.3em;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0 0 0 0em;
+}
+
+#form p {
+  font-size: 5em;
+}
+
+div#results {
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+}
+
+#tracks li {
+  list-style-type: none;
+  width: 24em;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: black;
+}
+
+.img {
+  display: flex;
+}
+.album-img {
+  border: 1px solid black;
+}
+#tracks {
+  margin: 0.5em;
+}
+
+.song-info {
+  margin: 0.7em;
+}

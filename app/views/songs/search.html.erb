@@ -1,0 +1,21 @@
+<div id="header">
+  <h1> Song Search </h1>
+<p> Have a favorite song? </p>
+<p> Search it to see if the song title has been used before! </p>
+</div>
+<div id="search-body">
+<%= form_tag("/songs", method: "get") do %>
+  <%= label_tag(:q, "Song Search:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+<div id="results">
+<% unless @results.nil? %>
+<%  @results.each do |i| %>
+<ul id="tracks">
+  <li class="img"> <a href="<%=i['artistViewUrl'] %>"> <img src="<%=i['artworkUrl100'] %>" class="album-img"> </a>
+   <div class="song-info"> Track name: <%= i['trackName'] %> <br> Artist: <%= i['artistName'] %> <br> Album name: <%= i['collectionName'] %> </div> </li></ul>
+<% end %>
+<% end %>
+</div>
+</div>
