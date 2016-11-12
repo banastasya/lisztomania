@@ -1,0 +1,18 @@
+<div class="header">
+  <h1> Top Artists</h1>
+<p> Here are the top artists of the week! </p>
+<p> (Provided by LastFM) </p>
+</div>
+
+  <div class="chartlist">
+    <div id="songschart">
+  <%= @results.each do |x| %>
+  <ul id="songschart">
+      <li class="img"><span class="chartnumber"> <%= @counter %>: </span> <a href="<%=x['url']%>"> <img class="artistimg" src="<%= x['image'][1]['#text'] %>" /> </a> </li>
+    <li> Artist:  <%= x['name'] %> </li>
+  <% @counter +=1 %>
+  <% break if @counter == 25 %>
+</ul>
+    <% end %>
+</div>
+</div>

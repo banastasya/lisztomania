@@ -7,7 +7,7 @@
   </head>
   <body>
 
-  <div id="header">
+  <div class="header">
     <h1>Music List</h1>
     <h2>Welcome!</h2>
   </div>
@@ -15,17 +15,17 @@
     <div id="searchlist">
     <h2>Search for: </h2>
     <ul>
-      <li>Artist</li> <!--<%= link_to('Artist Search', controller: 'artist', action: 'search')%> !-->
-      <li>Album</li>
-      <li>Song</li>
+      <li> <%= link_to('Artists', controller: 'artist', action: 'search')%> </li>
+      <li> <%= link_to('Albums', controller: 'albums', action: 'search')%> </li>
+      <li> <%= link_to('Songs', controller: 'songs', action: 'search')%> </li>
     </ul>
   </div>
   <div id="genrelist">
-    <h2>Most popular: Genre</h2>
+    <h2>Top Charts:</h2>
     <ul>
-      <li>Pop</li>
-      <li>Rap</li>
-      <li>Rock</li>
+      <li> <%= link_to('Songs', controller: 'topsong', action: 'chart')%> </li>
+      <li><%= link_to('Arists', controller: 'topartist', action: 'chart')%></li>
+      <li>Albums</li>
     </ul>
   </div>
   <div id="artistlist">

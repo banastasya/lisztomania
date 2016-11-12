@@ -8,4 +8,8 @@ Rails.application.routes.draw do
 
   get 'songs' => 'songs#search'
 
+  get 'topsongs' => 'topsong#chart'
+
+  get 'topartists' => 'topartist#chart'
+
 end
