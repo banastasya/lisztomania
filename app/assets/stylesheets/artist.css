@@ -39,7 +39,7 @@ flex-wrap: wrap;
   width: 24em;
   font-weight: bold;
   font-family: sans-serif;
-  color: black;
+  color: #445660;
 }
 
 .img {
@@ -50,6 +50,7 @@ flex-wrap: wrap;
 }
 #tracks {
   margin: 0.5em;
+  padding: 0em;
 }
 
 .song-info {
