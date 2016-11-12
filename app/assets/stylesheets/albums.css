@@ -1,8 +1,9 @@
 
 nav {
   height: 2em;
-  background-color: #586F7C;
+  background-color: #7392B7;
   display: flex;
+  margin-top: 0em;
 }
 
 nav a {

@@ -6,25 +6,39 @@
     <title>Music List</title>
   </head>
   <body>
-<mypage>
+
   <div id="header">
     <h1>Music List</h1>
     <h2>Welcome!</h2>
   </div>
 <div id="main-block">
-    <h3>Let's Find!</h3>
-    <ol>
-      <li><%= link_to('Artist Search', controller: 'artist', action: 'search')%></li>
+    <div id="searchlist">
+    <h2>Search for: </h2>
+    <ul>
+      <li>Artist</li> <!--<%= link_to('Artist Search', controller: 'artist', action: 'search')%> !-->
       <li>Album</li>
       <li>Song</li>
-    </ol>
-    <h4>Most popular</h4>
-    <ol> Genre
+    </ul>
+  </div>
+  <div id="genrelist">
+    <h2>Most popular: Genre</h2>
+    <ul>
+      <li>Pop</li>
+      <li>Rap</li>
+      <li>Rock</li>
+    </ul>
+  </div>
+  <div id="artistlist">
+    <h2>Most popular: Artists</h2>
+    <ul>
       <li>Rap</li>
       <li>Rock</li>
       <li>Pop</li>
-    </ol>
+    </ul>
   </div>
-</mypage>
+  </div>
+  <footer>
+    <p> Andrew Lever - Anastasia Bykova  </p>
+  </footer>
   </body>
 </html>
