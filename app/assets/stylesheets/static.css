@@ -66,6 +66,10 @@ div.header {
 #main-block h2 {
   font-family: sans-serif;
   color: black;
+  text-align: center;
+  font-family: cursive;
+  font-size: 1.7em;
+  margin-bottom: 0.1em;
 }
 
 footer {
