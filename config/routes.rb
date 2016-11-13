@@ -12,5 +12,5 @@ Rails.application.routes.draw do
 
   get 'topartists' => 'topartist#chart'
 
-get 'toptags' => "toptags#chart"
+  get 'toptags' => "toptags#chart"
 end
