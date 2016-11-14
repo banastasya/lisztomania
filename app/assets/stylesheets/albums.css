@@ -1,7 +1,7 @@
 
 nav {
   height: 2em;
-  background-color: #7392B7;
+  background-color: black;
   display: flex;
   margin-top: 0em;
 
@@ -22,7 +22,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #F4F4F9;
+  background-color: white;
+  opacity: 50%;
   color: black;
 }
 

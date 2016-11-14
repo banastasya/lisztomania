@@ -21,9 +21,8 @@ div.header {
 
 #main-block {
  display: flex;
- background: url(store.jpg);
- background-size: cover;
  height: 40em;
+ background-color: black;
 }
 
 #main-block div {
@@ -55,7 +54,7 @@ div.header {
 
 #main-block h2 {
  font-family: sans-serif;
- color: black;
+ color: white;
  text-align: center;
  font-family: cursive;
  font-size: 1.7em;
@@ -67,6 +66,7 @@ footer {
    background-color: black;
    display: flex;
    margin-top: 0em;
+   border-color: white;
  }
 
 footer p {
