@@ -18,19 +18,18 @@ div.header {
 
 #main-block {
  display: flex;
- height: 40em;
+ height: 80em;
  background-color: black;
+ flex-direction: column;
 }
 
 #main-block div {
- width: 33%;
+ width: 100%;
  text-align: center;
- height: 20em;
+ height: 23em;
+ flex-direction: row;
 }
 
-#main-block div ul {
- list-style-type: none;
-}
 
 #main-block div ul li  {
  margin: 0.1em;
@@ -42,11 +41,6 @@ div.header {
  text-shadow: 2px 2px 9px rgba(0, 0, 0, 1);
  font-family: sans-serif;
  border: 1px solid;
-}
-
-#main-block div ul li a {
- text-decoration: none;
- color: white;
 }
 
 #main-block h2 {
@@ -74,4 +68,10 @@ footer p {
 margin: auto;
 color: white;
 font-family: sans-serif;
+}
+
+.homepageimg {
+  height: 20em;
+  width: 20em;
+  margin: 3em;
 }

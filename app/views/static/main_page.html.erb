@@ -11,24 +11,20 @@
     <h1>Music List</h1>
   </div>
 <div id="main-block">
+  <h2>Search for: </h2>
     <div id="searchlist">
-    <h2>Search for: </h2>
-    <ul>
-      <li> <%= link_to('Artists', controller: 'artist', action: 'search')%> </li>
-      <li> <%= link_to('Albums', controller: 'albums', action: 'search')%> </li>
-      <li> <%= link_to('Songs', controller: 'songs', action: 'search')%> </li>
-    </ul>
+    <%= link_to image_tag("artist.jpg", class: "homepageimg"), controller: 'artist', action: 'search'%>
+    <%= link_to image_tag("song.jpg", class: "homepageimg"), controller: 'albums', action: 'search'%>
+    <%= link_to image_tag("topartist.jpg", class: "homepageimg"), controller: 'songs', action: 'search'%>
   </div>
+  <h2>Top Charts:</h2>
   <div id="genrelist">
-    <h2>Top Charts:</h2>
-    <ul>
-      <li> <%= link_to('Songs', controller: 'topsong', action: 'chart')%> </li>
-      <li><%= link_to('Artists', controller: 'topartist', action: 'chart')%></li>
-      <li><%= link_to('Trends', controller: 'toptags', action: 'chart')%></li>
-    </ul>
+      <%= link_to image_tag("artist.jpg", class: "homepageimg"), controller: 'topsong', action: 'chart'%>
+      <%= link_to image_tag("topartist.jpg", class: "homepageimg"), controller: 'topartist', action: 'chart'%>
+      <%= link_to image_tag("topartist.jpg", class: "homepageimg"), controller: 'toptags', action: 'chart'%>
   </div>
+  <h2>Online Music Players:</h2>
   <div id="artistlist">
-    <h2>Online Music Players:</h2>
     <ul>
       <li><a href="https://soundcloud.com"> SoundCloud </a></li>
       <li><a href="http://www.last.fm/home"> Last.FM </a></li>
@@ -36,8 +32,5 @@
     </ul>
   </div>
   </div>
-  <footer>
-    <p> Andrew Lever - Anastasia Bykova  </p>
-  </footer>
   </body>
 </html>
