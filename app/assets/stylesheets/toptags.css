@@ -1,0 +1,19 @@
+#trendsbox {
+  display: flex;
+  height: 10em;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+#trendsbox li {
+  font-size: 2em;
+  list-style-type: none;
+  margin-left: 1em;
+}
+
+#trendsbox li a {
+  text-decoration: none;
+  color: black;
+}

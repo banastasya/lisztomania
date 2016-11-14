@@ -1,0 +1,12 @@
+<div class="header">
+  <h1> Last.FM Trends </h1>
+<p> The Top Trending Genres on Last.FM!</p>
+</div>
+
+<div id="trendsbox">
+<% @results.each do |x| %>
+<li><%= @counter %>:
+  <a href="<%=x['url']%>"> <%= x['name'].capitalize %> </a></li>
+<% @counter +=1 %>
+<% end %>
+</div>

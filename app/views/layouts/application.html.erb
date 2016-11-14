@@ -9,6 +9,15 @@
   </head>
 
   <body>
+    <nav>
+    <%= link_to('Home', controller: 'static', action: 'main_page')%>
+    <%= link_to('Artists', controller: 'artist', action: 'search')%>
+    <%= link_to('Albums', controller: 'albums', action: 'search')%>
+    <%= link_to('Songs', controller: 'songs', action: 'search')%>
+    <%= link_to('Top Songs', controller: 'topsong', action: 'chart')%>
+    <%= link_to('Top Artists', controller: 'topartist', action: 'chart')%>
+    <%= link_to('Top Trends', controller: 'toptags', action: 'chart')%>
+    </nav>
     <%= yield %>
   </body>
 </html>

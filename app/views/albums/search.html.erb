@@ -1,0 +1,29 @@
+<div class="header">
+  <h1> Album Search: </h1>
+<p> Enter an album to see the track list! </p>
+<p> All images are linked to itunes! </p>
+</div>
+<div id="search-body">
+<%= form_tag("/albums", method: "get") do %>
+  <%= label_tag(:q, "Album Search:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+<div id="albums">
+  <div id="albuminfo">
+<% unless @results.nil? || @results.empty? %>
+<a href="<%=@results.first['artistViewUrl'] %>"> <img src="<%=@results.first['artworkUrl100'] %>" class="albumlarge"> </a>
+<p> Artist: <%= @results.first['artistName'] %> Album: <%= @results.first['collectionName'] %> </p>
+</div>
+<div id="tracklist">
+<% @results.each do |x| %>
+  <% unless x['collectionName'].nil? %>
+<% if x['collectionName'].upcase == @input.upcase %>
+<li> <%= x['trackName'] %> </li>
+<% end %>
+<%end %>
+<% end %>
+</div>
+<% end %>
+</div>
+</div>

@@ -1,11 +1,21 @@
-<h1> Artist Search! </h1>
-<p> Please enter an artist to search!</p>
-<p> We wil list albums and tracks below!</p>
+<div class="header">
+  <h1> Artist Search </h1>
+<p> Enter an artist to see the most popular songs!</p>
+<p> All images are linked to itunes! </p>
+</div>
+<div id="search-body">
 <%= form_tag("/artist", method: "get") do %>
-  <%= label_tag(:q, "Search for:") %>
+  <%= label_tag(:q, "Artist Search:") %>
   <%= text_field_tag(:q) %>
   <%= submit_tag("Search") %>
 <% end %>
-
-<%= @results %>
-<%= @albumresults %>
+<div id="results">
+<% unless @results.nil? %>
+<%  @results.each do |i| %>
+<ul id="tracks">
+  <li class="img"> <a href="<%=i['artistViewUrl'] %>"> <img src="<%=i['artworkUrl100'] %>" class="album-img"> </a>
+   <div class="song-info">Album name: <%= i['collectionName'] %> <br> Track name: <%= i['trackName'] %> <br> Genre: <%= i['primaryGenreName'] %> </div> </li></ul>
+<% end %>
+<% end %>
+</div>
+</div>
