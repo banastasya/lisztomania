@@ -3,8 +3,6 @@ div.header {
  margin: 0;
 }
 
-
-
 .header {
  text-align: center;
  color: white;
@@ -17,7 +15,6 @@ div.header {
  background-size: 100%;
  background-repeat: no-repeat;
 }
-
 
 #main-block {
  display: flex;
@@ -59,6 +56,10 @@ div.header {
  font-family: cursive;
  font-size: 1.7em;
  margin-bottom: 0.1em;
+}
+
+.header h1 {
+  margin: 0em;
 }
 
 footer {
