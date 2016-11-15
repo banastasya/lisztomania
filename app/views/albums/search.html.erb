@@ -14,7 +14,7 @@
   <div id="albuminfo">
 <% unless @results.nil? || @results.empty? %>
 <a href="<%=@results.first['artistViewUrl'] %>"> <img src="<%=@results.first['artworkUrl100'] %>" class="albumlarge"> </a>
-<p> Artist: <%= @results.first['artistName'] %> Album: <%= @results.first['collectionName'] %> </p>
+<p> Artist: <%= @results.first['artistName'] %> <br> Album: <%= @results.first['collectionName'] %> </p>
 </div>
 <div id="tracklist">
 <% @results.each do |x| %>

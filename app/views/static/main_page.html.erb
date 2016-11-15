@@ -2,8 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Music List</title>
   </head>
   <body>
@@ -12,7 +10,7 @@
     <h1>Music List</h1>
   </div>
 <div id="main-block">
-  <h2>Search for: </h2>
+  <h2>Search:</h2>
     <div id="searchlist">
  <%= link_to image_tag("artist.jpg", class: "homepageimg"), controller: 'artist', action: 'search'%>
 
@@ -20,10 +18,10 @@
 
     <%= link_to image_tag("song.jpg", class: "homepageimg"), controller: 'songs', action: 'search'%>
   </div>
-  <h2>Top Charts:</h2>
+  <h2>Charts:</h2>
   <div id="genrelist">
-      <%= link_to image_tag("songs2.jpg", class: "homepageimg"), controller: 'topsong', action: 'chart'%>
       <%= link_to image_tag("topartist.jpg", class: "homepageimg"), controller: 'topartist', action: 'chart'%>
+      <%= link_to image_tag("songs2.jpg", class: "homepageimg"), controller: 'topsong', action: 'chart'%>
       <%= link_to image_tag("trends.jpg", class: "homepageimg"), controller: 'toptags', action: 'chart'%>
   </div>
   <h2>Online Music Players:</h2>
