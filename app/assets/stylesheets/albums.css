@@ -20,11 +20,11 @@ nav a {
   font-family: sans-serif;
   text-align: center;
   margin: 0.2em 1em;
+  font-style: 1em;
 }
 
 nav a:hover {
-font-size: 1em;
-color: red;
+font-size: 1.5em;
 }
 
 #search-body {
