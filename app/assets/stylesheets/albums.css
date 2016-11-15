@@ -13,17 +13,17 @@ nav {
 
 }
 nav a {
+  width: 5em;
+  height: 1em;
   color: white;
   text-decoration: none;
-  border-radius: 1px;
   font-family: sans-serif;
   text-align: center;
-  margin: 0.1em 2em;
-  border: 1px solid red;
+  margin: 0.2em 1em;
 }
 
 nav a:hover {
-color: red;
+font-size: 1.5em;
 }
 
 #search-body {
@@ -66,12 +66,12 @@ color: red;
   font-weight: bold;
   text-align: center;
   font-size: 2em;
-  color: #445660;
+  color: white;
 }
 
 #albums li {
   background-color: white;
   font-weight: bold;
   margin: 0.3em;
-  color: #445660;
+  color: white;
 }
