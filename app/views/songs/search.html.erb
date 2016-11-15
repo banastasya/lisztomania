@@ -1,9 +1,10 @@
 <div class="header">
   <h1> Song Search </h1>
-<p> Have a favorite song? </p>
-<p> Search it to see if the song title has been used before! </p>
+
 </div>
 <div id="search-body">
+  <p class="intro"> Have a favorite song? </p>
+  <p class="intro"> Search it to see if the song title has been used before! </p>
 <%= form_tag("/songs", method: "get") do %>
   <%= label_tag(:q, "Song Search:") %>
   <%= text_field_tag(:q) %>

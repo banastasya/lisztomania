@@ -1,9 +1,10 @@
 <div class="header">
   <h1> Album Search: </h1>
-<p> Enter an album to see the track list! </p>
-<p> All images are linked to itunes! </p>
+
 </div>
 <div id="search-body">
+  <p class="intro"> Enter an album to see the track list! </p>
+  <p class="intro"> All images are linked to itunes! </p>
 <%= form_tag("/albums", method: "get") do %>
   <%= label_tag(:q, "Album Search:") %>
   <%= text_field_tag(:q) %>

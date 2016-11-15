@@ -1,9 +1,10 @@
 <div class="header">
   <h1> Artist Search </h1>
-<p> Enter an artist to see the most popular songs!</p>
-<p> All images are linked to itunes! </p>
+
 </div>
 <div id="search-body">
+  <p class="intro"> Enter an artist to see the most popular songs!</p>
+  <p class="intro"> All images are linked to itunes! </p>
 <%= form_tag("/artist", method: "get") do %>
   <%= label_tag(:q, "Artist Search:") %>
   <%= text_field_tag(:q) %>
