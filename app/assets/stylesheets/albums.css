@@ -26,17 +26,26 @@ nav a:hover {
 color: red;
 }
 
+#search-body {
+  background-color: black;
+}
+
 #search-body form {
   text-align: center;
+  margin: 0;
 }
 
 #search-body input#q{
   width: 30%;
+  background-color: white;
+}
+#search-body input {
+  background-color: white;
 }
 #search-body label {
   font-weight: bold;
   font-size: 2em;
-  color: #445660;
+  color: white;
 }
 #albums {
   display: flex;
