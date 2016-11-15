@@ -1,7 +1,8 @@
 
 nav {
-  height: 2em;
+  height: 3em;
   background-color: black;
+  text-align: center;
   display: flex;
   margin-top: 0em;
 
@@ -14,10 +15,11 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  padding: auto;
   border-radius: 1px;
   font-family: sans-serif;
+  text-align: center;
   margin: 0.1em 2em;
+  border: 1px solid red;
 }
 
 nav a:hover {
