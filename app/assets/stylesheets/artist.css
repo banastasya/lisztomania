@@ -8,7 +8,7 @@ html {
 
 * {
   background-color: black;
-  
+
 }
 p.intro {
   color: white;
@@ -43,7 +43,7 @@ flex-wrap: wrap;
   width: 24em;
   font-weight: bold;
   font-family: sans-serif;
-  color: #445660;
+  color: white;
 }
 
 .img {
