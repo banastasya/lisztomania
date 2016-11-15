@@ -14,12 +14,15 @@
 <div id="main-block">
   <h2>Search for: </h2>
     <div id="searchlist">
+      <div id="icons">
  <%= link_to image_tag("artist.jpg", class: "homepageimg"), controller: 'artist', action: 'search'%>
 
     <%= link_to image_tag("album.jpg", class: "homepageimg"), controller: 'albums', action: 'search'%>
 
     <%= link_to image_tag("song.jpg", class: "homepageimg"), controller: 'songs', action: 'search'%>
+
   </div>
+</div>
   <h2>Top Charts:</h2>
   <div id="genrelist">
       <%= link_to image_tag("songs2.jpg", class: "homepageimg"), controller: 'topsong', action: 'chart'%>

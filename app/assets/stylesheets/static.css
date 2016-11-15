@@ -86,3 +86,9 @@ font-family: sans-serif;
   height: 4em;
   width: auto;
 }
+
+#main-block div#artistlist {
+  display: block;
+  margin-left: 30%;
+
+}
