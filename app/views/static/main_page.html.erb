@@ -14,21 +14,23 @@
   <h2>Search for: </h2>
     <div id="searchlist">
     <%= link_to image_tag("artist.jpg", class: "homepageimg"), controller: 'artist', action: 'search'%>
-    <%= link_to image_tag("song.jpg", class: "homepageimg"), controller: 'albums', action: 'search'%>
-    <%= link_to image_tag("topartist.jpg", class: "homepageimg"), controller: 'songs', action: 'search'%>
+
+    <%= link_to image_tag("album.jpg", class: "homepageimg"), controller: 'albums', action: 'search'%>
+
+    <%= link_to image_tag("song.jpg", class: "homepageimg"), controller: 'songs', action: 'search'%>
   </div>
   <h2>Top Charts:</h2>
   <div id="genrelist">
-      <%= link_to image_tag("artist.jpg", class: "homepageimg"), controller: 'topsong', action: 'chart'%>
+      <%= link_to image_tag("songs2.jpg", class: "homepageimg"), controller: 'topsong', action: 'chart'%>
       <%= link_to image_tag("topartist.jpg", class: "homepageimg"), controller: 'topartist', action: 'chart'%>
-      <%= link_to image_tag("topartist.jpg", class: "homepageimg"), controller: 'toptags', action: 'chart'%>
+      <%= link_to image_tag("trends.jpg", class: "homepageimg"), controller: 'toptags', action: 'chart'%>
   </div>
   <h2>Online Music Players:</h2>
   <div id="artistlist">
     <ul>
-      <li><a href="https://soundcloud.com"> SoundCloud </a></li>
-      <li><a href="http://www.last.fm/home"> Last.FM </a></li>
-      <li><a href="http://www.pandora.com/"> Pandora </a></li>
+      <li><a href="https://soundcloud.com"><%= image_tag("unnamed", class: "links")%></a></li>
+      <li><a href="http://www.last.fm/home"><%= image_tag("lastfm", class: "links")%> </a></li>
+      <li><a href="http://www.pandora.com/"> <%= image_tag("pandora", class: "links")%> </a></li>
     </ul>
   </div>
   </div>
