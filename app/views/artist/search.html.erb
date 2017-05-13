@@ -3,8 +3,8 @@
 
 </div>
 <div id="search-body">
-  <p class="intro"> Enter an artist to see the most popular songs!</p>
-  <p class="intro"> All images are linked to itunes! </p>
+  <p class="intro"> Enter an artist to see their most popular songs!</p>
+  <p class="intro"> All images are linked to iTunes! </p>
 <%= form_tag("/artist", method: "get") do %>
   <%= label_tag(:q, "Artist Search:") %>
   <%= text_field_tag(:q) %>

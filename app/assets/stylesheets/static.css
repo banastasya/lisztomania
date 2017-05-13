@@ -1,5 +1,6 @@
 body {
 background-color: black;
+font-family: 'Poiret One';
 }
 
 div.header {
@@ -30,7 +31,6 @@ div.header {
 }
 
 #main-block div {
- width: 100%;
  flex-direction: row;
  display: flex;
  justify-content: space-around;
@@ -39,56 +39,146 @@ div.header {
 
 
 #main-block h2 {
- font-family: sans-serif;
+ font-family: 'Poiret One', sans-serif;
  font-weight: 100;
  color: white;
  text-align: left;
- font-size: 1.2em;
+ font-size: 2em;
  margin-bottom: 0.5em;
  margin-left: 50px;
+
 }
 
+
 .header h1 {
-  margin: 0em;
+  margin: 0.5em;
   font-family: 'Poiret One';
 }
 
 footer {
    height: 3em;
-   background-color: black;
    display: flex;
    margin-top: 0em;
-   border-color: white;
+   border-top: 1px solid white;
+   margin: 2em;
  }
 
 footer p {
 margin: auto;
 color: white;
-font-family: sans-serif;
 }
 
 .homepageimg {
   position: relative;
   max-width: 100%;
   height: 12em;
-  width: 15em;
+  width: 18em;
   margin: 0 auto;
-  /*margin-left: 3em;*/
+  /*margin-left: 3em;
+  margin-right: 3em;*/
   border: 1px solid white;
-  opacity: 0.3;
+  opacity: 0.6;
+  transition: all 400ms ease;
 }
 
 .homepageimg:hover {
-  opacity: 1;
+  opacity: 0.2;
 
 }
 .links {
-  height: 4em;
+  height: 2.5em;
   width: auto;
 }
+#lastfm {
+  margin: 0 20px;
+}
+#playerimgs {
+margin: auto;
+}
+#artistsCat {
+  position: relative;
+}
+#songsCat {
+  position: relative;
+}
+#artistsCat:hover:after {
+  content: "Top Artists";
+  color: white;
+  position: absolute;
+  pointer-events: none;
+  top: 36%;
+  left: 15%;
+  font-size: 50px;
+  opacity: 1;
+}
 
-#main-block div#artistlist {
+#songsCat:hover:after {
+  content: "Top Songs";
+  color: white;
+  position: absolute;
+  top:36%;
+  right: 14%;
+  pointer-events: none;
+  font-size: 50px;
+  opacity: 1;
+}
+#trendsCat{
+  position: relative;
+}
+#trendsCat:hover:after {
+  content: "Top Trends";
+  color: white;
+  position: absolute;
+  pointer-events: none;
+  top: 36%;
+  left: 12%;
+  font-size: 50px;
+  opacity: 1;
+}
+#artistCat {
+  position: relative;
+}
+#artistCat:hover:after {
+  content: "Artists";
+  color: white;
+  position: absolute;
+  pointer-events: none;
+  top: 38%;
+  left: 26%;
+  font-size: 50px;
+  opacity: 1;
+}
+#albumCat {
+  position: relative;
+}
+#albumCat:hover:after {
+  content: "Albums";
+  color: white;
+  position: absolute;
+  pointer-events: none;
+  top: 38%;
+  left: 23%;
+  font-size: 50px;
+  opacity: 1;
+}
+#songCat {
+  position: relative;
+}
+#songCat:hover:after {
+  content: "Songs";
+  color: white;
+  position: absolute;
+  pointer-events: none;
+  top: 38%;
+  left: 31%;
+  font-size: 50px;
+  opacity: 1;
+}
+/*#main-block div#artistlist {
   display: block;
   margin-left: 30%;
-
-}
+}*/
+/*h2#musicplayers {
+  text-align: center;
+  margin-top: 1em;
+}*/

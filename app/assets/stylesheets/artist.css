@@ -12,7 +12,7 @@ p.intro {
   font-size: 1.5em;
   padding: 0.3em;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Poiret one', sans-serif;
   margin: 0 0 0 0em;
 }
 
@@ -32,14 +32,16 @@ div#results {
 display: flex;
 width: 100%;
 flex-wrap: wrap;
+justify-content: space-around;
 }
 
 #tracks li {
   list-style-type: none;
-  width: 24em;
+  width: 20em;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Poiret one', sans-serif;
   color: white;
+  font-size: 1.2em;
 }
 
 .img {
